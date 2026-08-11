@@ -1,0 +1,13 @@
+// Last updated: 11/08/2026, 14:14:35
+class Solution {
+    public int minimumMoves(String s) {
+        int moves=0;
+        for(int i =0;i<s.length();i++){
+            if (s.charAt(i)=='X'){
+                moves++;
+                i+=2;
+            }
+        }
+        return moves;
+    }
+}
